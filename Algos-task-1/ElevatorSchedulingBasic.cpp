@@ -2,15 +2,15 @@
 
 using namespace std;
 
-int n,f[100],a[100],b[100],c[100],r=9,d=0;
+int n,f[100],a[100],b[100],c[100],r=0,d=0;
 
 int main(){
     int i=0,j=0,k=0,temp;
     cin>>n;
-    for(i=0;i<r;i++){//getting the values
-        cin>>f[i];
-        a[i]=f[i];
-    }
+    do{
+        scanf("%d%c", &a[r], &temp);
+        r++; 
+        }while(temp!='\n');
     for(i=0;i<r;i++){//sorting
         for(j=i+1;j<r;j++){
             if(a[i]>a[j]){
